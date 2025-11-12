@@ -1,32 +1,44 @@
 # EDL-Time_Sum: Precise Source Material Usage Analysis
-# Python script for accurate source material usage reporting from an EDL.
-# Author: Johannes Glaw | License: GNU AGPL-3.0
+Python script for accurate source material usage reporting from an EDL.  
+**Author:** Johannes Glaw | **License:** GNU AGPL-3.0  
 
-# Requirements:
-# - Python 3.6+
-# - Standard libraries only: re, collections
+---
 
-# Usage:
-# 1. Duplicate your sequence in your editor (Premiere, DaVinci, Avid)
-# 2. Consolidate all video cuts onto a single video track (V1)
-# 3. Export as CMX 3600 EDL
+## Requirements
+- Python 3.6+  
+- Standard libraries only: `re`, `collections`  
 
-# ---------------- CONFIGURATION ----------------
+---
+
+## Usage
+1. Duplicate your sequence in your editor (Premiere, DaVinci, Avid)  
+2. Consolidate all video cuts onto a single video track (V1)  
+3. Export as CMX 3600 EDL  
+
+---
+
+## Configuration
+```python
 # Path to your EDL file
-EDL_FILE_PATH="ADD/YOUR/PATH/TO/EDL_FILE.edl"  # <--- ENTER YOUR PATH HERE
+EDL_FILE_PATH = "ADD/YOUR/PATH/TO/EDL_FILE.edl"  # <--- ENTER YOUR PATH HERE
 # Frame rate of your source clips (e.g., 24, 25, 30)
-SOURCE_FRAMERATE=25  # <--- ENTER YOUR SOURCE CLIP FRAMERATE HERE
+SOURCE_FRAMERATE = 25  # <--- ENTER YOUR SOURCE CLIP FRAMERATE HERE
+Running the Script
+Open terminal, navigate to the script folder, and run:
 
-# ---------------- RUN ----------------
-# Open terminal, navigate to script folder, and run:
-# $ python edl-time-sum.py
+bash
+Code kopieren
+python edl-time-sum.py
+Output
+Debug log for merged/ignored overlaps
 
-# ---------------- OUTPUT ----------------
-# - Debug log for merged/ignored overlaps
-# - Total Additive Length (inflated)
-# - Total Unique Length (accurate billing)
-# - Difference between totals
+Total Additive Length (inflated)
 
-# Enjoy precise reporting! 🥳
+Total Unique Length (accurate billing)
 
-# Support the Author: https://buymeacoffee.com/ReflexLabFlow
+Difference between totals
+
+Enjoy precise reporting! 🥳
+
+Support the Author
+Buy me a coffee
