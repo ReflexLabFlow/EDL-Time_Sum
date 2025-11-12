@@ -23,22 +23,19 @@ Python script for accurate source material usage reporting from an EDL.
 EDL_FILE_PATH = "ADD/YOUR/PATH/TO/EDL_FILE.edl"  # <--- ENTER YOUR PATH HERE
 # Frame rate of your source clips (e.g., 24, 25, 30)
 SOURCE_FRAMERATE = 25  # <--- ENTER YOUR SOURCE CLIP FRAMERATE HERE
-Running the Script
-Open terminal, navigate to the script folder, and run:
-
-bash
-Code kopieren
+````
+## Running the Script
+Open terminal, navigate to the script folder, and run:  
+```bash
 python edl-time-sum.py
-Output
-Debug log for merged/ignored overlaps
+````
+## Output
+- Debug log for merged/ignored overlaps
+- Total Additive Length (inflated)
+- Total Unique Length (accurate billing)
+- Difference between totals
 
-Total Additive Length (inflated)
-
-Total Unique Length (accurate billing)
-
-Difference between totals
-
-Enjoy precise reporting! 🥳
+# Enjoy precise reporting! 🥳
 
 Support the Author
-Buy me a coffee
+https://buymeacoffee.com/reflexlabflow
